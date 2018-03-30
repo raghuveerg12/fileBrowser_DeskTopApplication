@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<title>File Backup</title>
+
+<link rel="stylesheet" href="/IsonBackupManagement/static/css/isonbackup.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<div id="page-wrapper" class="clearfix">
+		<h1>File Lister</h1>
+		<div id="files">
+			<h2 id="folderName">
+				<span>Folder</span>
+			</h2>
+
+			<ul id="listing"></ul>
+		</div>
+	</div>
+
+
+	<input type="file" id="filepicker" name="fileList"
+		webkitdirectory="true" allowdirs="true" multiple directory />
+
+	<input type="button" id="save" name="saveToJson" value="Save" />	
+	<script src="/IsonBackupManagement/static/js/filesystem.js"></script>
+	<script type="text/javascript"></script>
+</body>
+</html>
